@@ -287,12 +287,12 @@ export const OrdersData = [
 	},
 ];
 
-export const UsersList = [
+export const UsersListInfos = [
 	{
 		user: {
 			name: "Emma Smith",
 			email: "smith@kpmg.com",
-			img: "https://preview.keenthemes.com/metronic8/demo39/assets/media/avatars/300-6.jpg",
+			img: "/images/user_image.jpg",
 		},
 		role: "Administrator",
 		last_login: "yesterday",
@@ -314,7 +314,7 @@ export const UsersList = [
 		user: {
 			name: "Max Smith",
 			email: "melody@altbox.com",
-			img: "https://preview.keenthemes.com/metronic8/demo39/assets/media/avatars/300-6.jpg",
+			img: "/images/user_image.jpg",
 		},
 		role: "Developer",
 		last_login: "20 mins ago",

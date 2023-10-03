@@ -29,9 +29,9 @@ const Sidebar = ({ open }) => {
 	// group-hover:text-[#3E97FF]
 	return (
 		<div
-			className={`min-h-[100vh] px-2 mr-2 border-r ${
-				open ? "w-72" : "w-20"
-			} duration-500 relative hover:w-72 group`}
+			className={`min-h-[100vh] fixed top-0 left-0 px-2 ${
+				open ? "w-[17rem]" : "w-20"
+			} duration-500 relative hover:w-[17rem] group`}
 		>
 			<div className="flex flex-col gap-1 overflow-hidden">
 				{sidebarData &&
@@ -49,7 +49,6 @@ const Sidebar = ({ open }) => {
 									}`}
 								>
 									<BiUser />
-
 									<h2
 										className={`${
 											activeMenu === menu.menu_name

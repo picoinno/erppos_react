@@ -1,3 +1,4 @@
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
@@ -10,7 +11,7 @@ const Checkbox = ({ name, value, id, labelText, required }) => {
 	return (
 		<React.Fragment>
 			<div className="flex items-center">
-				<div className="w-5 h-5 relative overflow-hidden cursor-pointer">
+				<div className="w-5 h-5 relative overflow-hidden border rounded cursor-pointer">
 					<input
 						type="checkbox"
 						className="w-full h-full appearance-none cursor-pointer focus:outline-none"
@@ -21,13 +22,13 @@ const Checkbox = ({ name, value, id, labelText, required }) => {
 						id={id}
 					/>
 					<div
-						className={`pointer-events-none w-full h-full border absolute top-0 left-0 flex items-center justify-center text-xs text-white rounded shadow-inner ${
+						className={`pointer-events-none w-full h-full absolute top-0 left-0 flex items-center justify-center text-xs text-white shadow-inner ${
 							checked
-								? "bg-green-500 border-green-500"
+								? "bg-[#3e97ff] border-[#3e97ff]"
 								: "bg-gray-200 border-gray-400"
 						}`}
 					>
-						{checked ? <FontAwesomeIcon icon="fa-regular fa-check" /> : null}
+						{checked ? <FontAwesomeIcon icon={faCheck} /> : null}
 					</div>
 				</div>
 				{labelText ? (
