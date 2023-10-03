@@ -15,17 +15,17 @@ const Layout = ({ title, children }) => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<div className={`flex min-h-screen flex-col bg-[#f4f2f2]`}>
-				<Header open={open} setOpen={setOpen} />
 
-				<main className="flex min-h-[80vh] mt-[85px] px-4 pt-5">
-					<Sidebar open={open} />
-					<div className="flex-grow w-full flex flex-col justify-between pb-5 overflow-auto customize__scroll">
+			<main className="flex min-h-screen px-4 bg-[#f4f2f2] relative">
+				<Sidebar open={open} />
+				<div className="flex-grow w-full pb-5 overflow-auto relative">
+					<Header open={open} setOpen={setOpen} />
+					<div className="flex flex-col justify-between">
 						<div className="bg-white rounded-md">{children}</div>
 						<Footer />
 					</div>
-				</main>
-			</div>
+				</div>
+			</main>
 		</>
 	);
 };

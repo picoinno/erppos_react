@@ -13,7 +13,7 @@ import { faBell } from "@fortawesome/free-regular-svg-icons";
 
 const Header = ({ open, setOpen }) => {
 	return (
-		<header className="z-50 fixed top-0 left-0 right-0 p-4 md:px-4 bg-[#f4f2f2]">
+		<header className="sticky top-0 z-10 p-4 md:px-4 bg-[#f4f2f2]">
 			<nav className={`px-4 flex items-center`}>
 				<div className="flex items-center gap-3 w-[10rem] md:w-[17rem]">
 					<div

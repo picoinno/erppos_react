@@ -29,7 +29,7 @@ const Sidebar = ({ open }) => {
 	// group-hover:text-[#3E97FF]
 	return (
 		<div
-			className={`min-h-[100vh] fixed top-0 left-0 px-2 ${
+			className={`min-h-[100vh] fixed top-0 left-0 px-2 pt-20 ${
 				open ? "w-[17rem]" : "w-20"
 			} duration-500 relative hover:w-[17rem] group`}
 		>

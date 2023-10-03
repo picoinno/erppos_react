@@ -15,8 +15,8 @@ const CustomTable = ({ tableHeader, rowData }) => {
 		console.log("sort");
 	};
 	return (
-		<div className="text-sm flex flex-col gap-3 lg:w-full w-11/12 customize__scroll overflow-x-auto m-auto px-4 bg-white">
-			<table className="table w-full ">
+		<div className="text-sm flex flex-col gap-3 lg:w-full w-11/12 customize__scroll m-auto px-4 bg-white">
+			<table className="table w-full">
 				<thead>
 					<tr className="text-left text-gray-400 uppercase border-b border-dashed border-gray-200">
 						<th className="px-3 py-4 min-w-[10px]">
