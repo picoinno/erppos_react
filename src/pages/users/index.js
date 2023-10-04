@@ -10,7 +10,7 @@ const tableHeader = ["User", "Role", "Last Login", "Two-Step", "Joined Date"];
 const UsersList = () => {
 	return (
 		<Layout>
-			<>
+			<div className="bg-white rounded-lg pb-5">
 				<div className="px-8 pt-6">
 					<h1 className="font-semibold">Users List</h1>
 					<div>
@@ -26,7 +26,7 @@ const UsersList = () => {
 						<TablePagination />
 					</div>
 				</div>
-			</>
+			</div>
 		</Layout>
 	);
 };

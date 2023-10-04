@@ -20,7 +20,7 @@ const Layout = ({ title, children }) => {
 				<Sidebar open={open} />
 				<div className="flex-1 w-full pb-5 overflow-auto relative">
 					<Header open={open} setOpen={setOpen} />
-					<div className="flex flex-col justify-between">
+					<div className="flex flex-col justify-between h-[90%]">
 						<div>{children}</div>
 						<Footer />
 					</div>

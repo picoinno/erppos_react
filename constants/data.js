@@ -388,6 +388,17 @@ export const UsersListInfos = [
 		joined_date: "21 Feb 2023, 11:05",
 	},
 ];
+export const RolesListInfos = [
+	{
+		name: "Administrator",
+	},
+	{
+		name: "Cashier",
+	},
+	{
+		name: "Store Keeper",
+	},
+];
 export const ProductsList = [
 	{
 		product: {
