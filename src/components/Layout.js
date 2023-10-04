@@ -18,10 +18,10 @@ const Layout = ({ title, children }) => {
 
 			<main className="flex min-h-screen px-4 bg-[#f4f2f2] relative">
 				<Sidebar open={open} />
-				<div className="flex-grow w-full pb-5 overflow-auto relative">
+				<div className="flex-1 w-full pb-5 overflow-auto relative">
 					<Header open={open} setOpen={setOpen} />
 					<div className="flex flex-col justify-between">
-						<div className="bg-white rounded-md">{children}</div>
+						<div>{children}</div>
 						<Footer />
 					</div>
 				</div>

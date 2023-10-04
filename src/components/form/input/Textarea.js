@@ -24,7 +24,7 @@ const Textarea = ({
 				</div>
 			) : null}
 			<textarea
-				className={`block text-gray-600 resize-none focus:outline-none px-4 py-2 rounded-lg focus:shadow-inner border ${
+				className={`block w-full text-gray-600 resize-none focus:outline-none px-4 py-2 rounded-lg focus:shadow-inner border ${
 					error ? "border-red-300 bg-red-100" : "border-gray-300 bg-transparent"
 				} ${className ? className : null}`}
 				name={name}

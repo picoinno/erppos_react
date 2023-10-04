@@ -1,6 +1,6 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { BiSearch } from "react-icons/bi";
 
 const Input = ({
 	labelText,
@@ -40,8 +40,7 @@ const Input = ({
 			<div className="relative overflow-hidden">
 				{leftIcon && (
 					<span className="h-full inline-flex items-center justify-center p-0 absolute top-0 left-1 mx-3 text-gray-400">
-						{/* <FontAwesomeIcon icon={leftIcon} /> */}
-						<BiSearch />
+						<FontAwesomeIcon icon={leftIcon} />
 					</span>
 				)}
 				<input
@@ -70,8 +69,7 @@ const Input = ({
 						className="h-full inline-flex items-center justify-center p-0 absolute top-0 right-0 mx-3 text-gray-400 cursor-pointer"
 						onClick={iconClick}
 					>
-						{/* <FontAwesomeIcon icon={rightIcon} /> */}
-						<BiSearch />
+						<FontAwesomeIcon icon={rightIcon} />
 					</span>
 				)}
 			</div>
