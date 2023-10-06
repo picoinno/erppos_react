@@ -19,7 +19,7 @@ const rolesList = () => {
 						<Breadcrumbs />
 					</div>
 				</div>
-				<div className="bg-white m-8 p-8 border rounded-md">
+				<div className="bg-white m-8 p-8 border rounded-xl">
 					<div className="flex items-center justify-between">
 						<div>
 							<Input placeholder="Search role" leftIcon={faSearch} />

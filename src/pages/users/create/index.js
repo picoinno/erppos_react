@@ -50,7 +50,7 @@ const CreateUser = () => {
 						Back
 					</Button>
 				</div>
-				<div className="bg-white rounded-lg px-8">
+				<div className="bg-white rounded-xl px-8">
 					<div className="pt-6">
 						<h1 className="font-semibold text-xl text-gray-700">
 							Create User Account
@@ -92,7 +92,7 @@ const CreateUser = () => {
 						</div>
 					</div>
 				</div>
-				<div className="bg-white rounded-lg mt-5 px-8 py-6">
+				<div className="bg-white rounded-xl mt-5 px-8 py-6">
 					<h1 className="font-semibold text-xl text-gray-700">
 						Roles and Permissions
 					</h1>
@@ -149,7 +149,7 @@ const CreateUser = () => {
 						</div>
 					</div>
 				</div>
-				<div className="bg-white rounded-lg mt-5 px-8 py-6">
+				<div className="bg-white rounded-xl mt-5 px-8 py-6">
 					<h1 className="font-semibold text-xl text-gray-700">
 						More Information
 					</h1>

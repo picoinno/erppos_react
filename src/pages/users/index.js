@@ -17,7 +17,7 @@ const UsersList = () => {
 						<Breadcrumbs />
 					</div>
 				</div>
-				<div className="rounded-md m-8 border">
+				<div className="rounded-xl m-8 border">
 					<div className="mb-4">
 						<TableFilter placeholder="Search user" />
 					</div>

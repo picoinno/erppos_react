@@ -50,7 +50,7 @@ const CreateRole = () => {
 						Back
 					</Button>
 				</div>
-				<div className="bg-white rounded-lg px-8">
+				<div className="bg-white rounded-xl px-8 overflow-auto">
 					<div className="pt-6">
 						<h1 className="font-semibold text-md text-gray-700">Role Add</h1>
 						<div>
