@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const FilterSelect = ({ data, className }) => {
 	const [selected, setSelected] = useState(data[0]);
@@ -16,16 +17,21 @@ const FilterSelect = ({ data, className }) => {
 		setFilterItems(filterItem);
 	};
 	return (
-		<div className={`${className ? className : null} w-72`}>
+		<div className={`w-full`}>
 			<Listbox value={selected} onChange={setSelected}>
-				<div className="relative mt-1">
-					<Listbox.Button className="relative w-full cursor-pointer text-gray-600 rounded-lg bg-transparent border border-gray-300 py-2 pl-3 pr-10 text-left sm:text-sm">
+				<div className={`relative`}>
+					<Listbox.Button
+						className={`relative w-72 ${
+							className ? className : null
+						} cursor-pointer text-gray-600 rounded-lg bg-transparent border border-gray-300 py-[9px] pl-3 pr-10 text-left sm:text-sm`}
+					>
 						<span className="block truncate">{selected.name}</span>
 						<span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-							<ChevronUpDownIcon
+							{/* <ChevronUpDownIcon
 								className="h-5 w-5 text-gray-400"
 								aria-hidden="true"
-							/>
+							/> */}
+							<FontAwesomeIcon icon={faChevronDown} />
 						</span>
 					</Listbox.Button>
 					<Transition
@@ -65,7 +71,8 @@ const FilterSelect = ({ data, className }) => {
 											</span>
 											{selected ? (
 												<span className="absolute inset-y-0 right-0 flex items-center pr-3 text-[#009ef7]">
-													<CheckIcon className="h-5 w-5" aria-hidden="true" />
+													{/* <CheckIcon className="h-5 w-5" aria-hidden="true" /> */}
+													<FontAwesomeIcon icon={faCheck} />
 												</span>
 											) : null}
 										</>

@@ -44,11 +44,11 @@ const Input = ({
 					</span>
 				)}
 				<input
-					className={`block w-full text-gray-600 text-sm focus:outline-none h-10 px-4 ${
+					className={`block w-full text-gray-500 text-sm focus:outline-none overflow-auto h-10 px-4 ${
 						className ? className : null
 					} ${
 						leftIcon ? "pl-10" : ""
-					} rounded-lg focus:shadow-inner border focus:bg-gray-200 ${
+					} rounded-lg focus:shadow-inner border focus:border-gray-400 ${
 						error ? "border-red-400 bg-red-100" : "border-gray-300 bg-white"
 					} ${required ? "required" : ""}`}
 					type={type}

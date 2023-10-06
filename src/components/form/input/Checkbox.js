@@ -12,7 +12,7 @@ const Checkbox = ({ name, value, id, labelText, required }) => {
 		<React.Fragment>
 			<div className="flex items-center">
 				<div
-					className={` w-5 h-5 relative overflow-hidden border rounded cursor-pointer`}
+					className={`w-5 h-5 relative overflow-hidden border rounded cursor-pointer`}
 				>
 					<input
 						type="checkbox"

@@ -13,10 +13,10 @@ const Select = ({ data, className, labelText, required, error }) => {
 		<React.Fragment>
 			{labelText ? (
 				<div className="p-1">
-					<label className="text-xs text-gray-700">{labelText}</label>
-					{required === true && (
-						<span className="text-red-500 ml-1">*</span>
-					)}{" "}
+					<label className="text-xs text-gray-700 font-semibold">
+						{labelText}
+					</label>
+					{required === true && <span className="text-red-500 ml-1">*</span>}{" "}
 					{error ? (
 						<label className="text-xs text-red-700 pt-0 mt-0">
 							( {error} )

@@ -1,6 +1,6 @@
 import React from "react";
 
-const RadioBox = ({ labelText, required, error, id }) => {
+const RadioBox = ({ labelText, label, required, error, id }) => {
 	return (
 		<React.Fragment>
 			{labelText ? (
@@ -23,13 +23,10 @@ const RadioBox = ({ labelText, required, error, id }) => {
 						id={id}
 						name="fav_language"
 						value="CSS"
-						className="bg-[#3e97ff] w-5 h-5 mr-4"
+						className="bg-[#fff] w-5 h-5 mr-4"
 					/>
 					<label htmlFor={id} className="ml-2">
-						<div className="text-sm text-gray-700">Get more visitors</div>
-						<div className="text-xs text-gray-500">
-							Increase impression traffic onto the platfrom
-						</div>
+						<div className="text-sm text-gray-700">{label}</div>
 					</label>
 				</div>
 			</div>

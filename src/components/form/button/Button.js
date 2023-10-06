@@ -6,7 +6,7 @@ const Button = ({
 	children,
 	rightIcon,
 	leftIcon,
-	iconColor,
+	iconClassName,
 	type,
 	name,
 	onClick,
@@ -29,7 +29,7 @@ const Button = ({
 					<FontAwesomeIcon
 						icon={leftIcon}
 						className={`h-[1.15rem] w-[1.15rem] ${
-							iconColor ? iconColor : null
+							iconClassName ? iconClassName : null
 						} `}
 					/>
 				)}
@@ -38,7 +38,7 @@ const Button = ({
 					<FontAwesomeIcon
 						icon={rightIcon}
 						className={`h-[1.15rem] w-[1.15rem] ${
-							iconColor ? iconColor : null
+							iconClassName ? iconClassName : null
 						}`}
 					/>
 				)}
