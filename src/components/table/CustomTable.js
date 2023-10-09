@@ -45,8 +45,6 @@ const CustomTable = ({ tableHeader, rowData }) => {
 					{rowData.length > 0 ? (
 						rowData.map((row, idx) => {
 							const rowKey = Object.keys(row);
-							// const orderStatus = row.status;
-							// console.log("orderStatus ", orderStatus);
 							return (
 								<tr
 									key={idx}
@@ -62,10 +60,6 @@ const CustomTable = ({ tableHeader, rowData }) => {
 										/>
 									</td>
 									{rowKey.map((key, idx) =>
-										// console.log(
-										// 	"rowkey ",
-										// 	row[key] == "Active" || "Completed"
-										// )
 										key === "customer" ? (
 											<td
 												className="text-left p-3 min-w-[200px]"
@@ -76,11 +70,6 @@ const CustomTable = ({ tableHeader, rowData }) => {
 														className={`w-[50px] h-[50px] cursor-pointer  rounded-full overflow-hidden mr-4`}
 													>
 														{row[key].img ? (
-															// <img
-															// 	src={row[key].img}
-															// 	alt=""
-															// 	className="w-full h-full"
-															// />
 															<Image
 																src={row[key].img}
 																alt=""
@@ -111,11 +100,6 @@ const CustomTable = ({ tableHeader, rowData }) => {
 														} rounded-md overflow-hidden mr-4`}
 													>
 														{row[key].img ? (
-															// <img
-															// 	src={row[key].img}
-															// 	alt=""
-															// 	className="w-full h-full"
-															// />
 															<Image
 																src={row[key].img}
 																alt=""
@@ -146,11 +130,6 @@ const CustomTable = ({ tableHeader, rowData }) => {
 														}  rounded-full overflow-hidden mr-4`}
 													>
 														{row[key].img ? (
-															// <img
-															// 	src={row[key].img}
-															// 	alt=""
-															// 	className="w-full h-full"
-															// />
 															<Image
 																src={row[key].img}
 																alt=""
@@ -199,7 +178,9 @@ const CustomTable = ({ tableHeader, rowData }) => {
 							);
 						})
 					) : (
-						<tr>there is no data</tr>
+						<tr>
+							<td>No data available in table</td>
+						</tr>
 					)}
 				</tbody>
 			</table>

@@ -156,6 +156,8 @@ export const sidebarData = [
 	},
 ];
 
+export const CustomerGroupList = [];
+
 export const CreateBusinessDetails = [
 	{
 		id: 1,
