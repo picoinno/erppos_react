@@ -28,7 +28,7 @@ const Select = ({ data, className, labelText, required, error }) => {
 				<Listbox value={selected} onChange={setSelected}>
 					<div className="relative mt-1">
 						<Listbox.Button className="relative w-full cursor-pointer text-gray-600 rounded-lg border border-gray-300 py-2 pl-3 pr-10 text-left sm:text-sm">
-							<span className="block truncate">{selected.name}</span>
+							<span className="block truncate capitalize">{selected.name}</span>
 							<span className="pointer-events-none absolute inset-y-0 right-0 flex flex-col justify-center items-center pr-2">
 								<FontAwesomeIcon
 									icon={faChevronUp}

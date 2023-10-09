@@ -20,14 +20,13 @@ const contactType = [
 		name: "Both (suppliers and customers)",
 	},
 ];
-
-const date = [
+const data = [
 	{ name: "Months" },
 	{
 		name: "Days",
 	},
 ];
-const CreateSupplier = () => {
+const CreateCustomer = () => {
 	const [moreInformations, setMoreInformations] = useState(false);
 	const showHandle = () => {
 		setMoreInformations(!moreInformations);
@@ -38,7 +37,7 @@ const CreateSupplier = () => {
 				<div className="bg-white rounded-xl px-8">
 					<div className="pt-6">
 						<h1 className="font-semibold text-xl text-gray-700">
-							Create User Account
+							Add Customer
 						</h1>
 						<div>
 							<Breadcrumbs />
@@ -67,10 +66,45 @@ const CreateSupplier = () => {
 						</div>
 						<div className="mt-5 grid grid-cols-8 gap-10">
 							<div className="col-span-2">
-								<Input labelText="Business Name" placeholder="Business Name" />
+								<FilterSelect
+									data={contactType}
+									labelText="Customer Group"
+									className="w-full"
+								/>
+							</div>
+							<div className="col-span-2">
+								<FilterSelect
+									data={contactType}
+									labelText="Price List"
+									className="w-full"
+								/>
 							</div>
 						</div>
 						<div className="mt-5 grid grid-cols-8 gap-x-10 gap-y-5">
+							<div className="col-span-2">
+								<Input
+									labelText="Prefix"
+									placeholder="Mr / Mrs / Miss"
+									required
+								/>
+							</div>
+							<div className="col-span-2">
+								<Input
+									labelText="First Name"
+									placeholder="First Name"
+									required
+								/>
+							</div>
+							<div className="col-span-2">
+								<Input
+									labelText="Middle Name"
+									placeholder="Middle Name"
+									required
+								/>
+							</div>
+							<div className="col-span-2">
+								<Input labelText="Last Name" placeholder="Last Name" required />
+							</div>
 							<div className="col-span-2">
 								<Input labelText="Mobile" placeholder="Mobile" required />
 							</div>
@@ -141,7 +175,7 @@ const CreateSupplier = () => {
 											</div>
 											<div className="flex items-center">
 												<Input type="number" className="rounded-r-none" />
-												<FilterSelect data={date} className="rounded-l-none" />
+												<FilterSelect data={data} className="rounded-l-none" />
 											</div>
 										</div>
 									</div>
@@ -159,6 +193,14 @@ const CreateSupplier = () => {
 											className="focus:outline-none focus:border-none overflow-hidden rounded-lg"
 											labelText="Payable Amount"
 											placeholder="Payable Amount"
+										/>
+									</div>
+									<div className="col-span-2">
+										<Input
+											type="number"
+											className="focus:outline-none focus:border-none overflow-hidden rounded-lg"
+											labelText="Credit Limit"
+											placeholder="Credit Limit"
 										/>
 									</div>
 								</div>
@@ -241,4 +283,4 @@ const CreateSupplier = () => {
 	);
 };
 
-export default CreateSupplier;
+export default CreateCustomer;

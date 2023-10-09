@@ -36,6 +36,7 @@ const marital = [
 const defaultLocation = [{ name: "No Results Fount" }];
 const CreateUser = () => {
 	const [open, setOpen] = useState(false);
+
 	const handleChange = () => {
 		setOpen(!open);
 	};
